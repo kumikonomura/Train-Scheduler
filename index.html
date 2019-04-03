@@ -14,11 +14,11 @@
     <div id="scheduleContainer">
         <table>
             <tr>
-                <th id="trainName">Train Name</th>
-                <th id="destination">Destination</th>
-                <th id="frequency">Frequency (min)</th>
-                <th id="next arrival">Next Arrival</th>
-                <th id="minutesAway">Minutes Away</th>
+                <th id="train">Train Name</th>
+                <th id="dest">Destination</th>
+                <th id="freq">Frequency (min)</th>
+                <th id="nextarrival">Next Arrival</th>
+                <th id="minutesaway">Minutes Away</th>
             </tr>
         </table>
         <table id="trainDisplay"></table>
@@ -28,25 +28,21 @@
     <br>
     <div id="formContainer">
         <form>
-            <label for="trainName">Train Name</label>
+            <label for="name">Train Name</label>
             <br>
-            <input type="text" id="trainName">
-            <br>
+            <input type="text" id="trainname">
             <br>
             <label for="destination">Destination</label>
             <br>
             <input type="text" id="destination">
             <br>
+            <label for="traintime">First Train Time (HH:mm - military time)</label>
             <br>
-            <label for="trainTime">First Train Time (HH:mm - military time)</label>
-            <br>
-            <input type="time" id="trainTime">
-            <br>
+            <input type="time" id="traintime">
             <br>
             <label for="frequency">Frequency (min)</label>
             <br>
             <input type="number" id="frequency">
-            <br>
             <br>
             <button id="submit">Submit</button>
         </form>
