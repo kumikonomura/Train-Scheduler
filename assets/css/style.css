@@ -1,0 +1,12 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#submit {
+    background-color: #008CBA;
+}
+header {
+    text-align: center;
+    font-size: 35px;
+}

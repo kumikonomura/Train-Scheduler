@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>Train Schedule</header>
+    <div id="scheduleTitle">Current Train Schedule</div>
+    <div id="scheduleContainer">
+        <table>
+            <tr>
+                <th id="trainName">Train Name</th>
+                <th id="destination">Destination</th>
+                <th id="frequency">Frequency (min)</th>
+                <th id="next arrival">Next Arrival</th>
+                <th id="minutesAway">Minutes Away</th>
+            </tr>
+        </table>
+        <table id="trainDisplay"></table>
+    </div>
+    
+    <div id="formTitle">Add Train</div>
+    <br>
+    <div id="formContainer">
+        <form>
+            <label for="trainName">Train Name</label>
+            <br>
+            <input type="text" id="trainName">
+            <br>
+            <br>
+            <label for="destination">Destination</label>
+            <br>
+            <input type="text" id="destination">
+            <br>
+            <br>
+            <label for="trainTime">First Train Time (HH:mm - military time)</label>
+            <br>
+            <input type="time" id="trainTime">
+            <br>
+            <br>
+            <label for="frequency">Frequency (min)</label>
+            <br>
+            <input type="number" id="frequency">
+            <br>
+            <br>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
